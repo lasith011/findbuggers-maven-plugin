@@ -1,0 +1,77 @@
+
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd"
+    name="FindBugs Maven Plugin">
+
+
+<!--
+  <bannerLeft>
+    <name>FindBugs Logo</name>
+    <src>/images/logos/FindBugsLogo_sm.png</src>
+    <alt>FindBugs logo</alt>
+    <href>/index.html</href>
+  </bannerLeft>
+-->
+  <bannerLeft>
+    <name>FindBugs Maven Plugin</name>
+  </bannerLeft>
+<!--
+  <bannerRight>
+    <name></name>
+  </bannerRight>
+-->
+
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.3.1</version>
+  </skin>
+
+  <custom>
+    <fluidoSkin>
+      <topBarEnabled>false</topBarEnabled>
+      <sideBarEnabled>true</sideBarEnabled>
+      <breadcrumbDivider>»</breadcrumbDivider>
+      <gitHub>
+        <projectId>gleclaire/findbugs-maven-plugin</projectId>
+        <ribbonOrientation>right</ribbonOrientation>
+        <ribbonColor>red</ribbonColor>
+      </gitHub>
+      <!--<googleSearch />-->
+      <!--<facebookLike />-->
+      <!--<googlePlusOne />-->
+      <ohloh>
+        <projectId>findbugs-maven-plugin</projectId>
+        <widget>thin-badge</widget>
+      </ohloh>
+    </fluidoSkin>
+  </custom>
+
+  <publishDate format="yyyy-MM-dd" position="right"/>
+  <version position="right"/>
+
+  <body>
+    <links>
+      <item name="FindBugs" href="http://findbugs.sourceforge.net/"/>
+    </links>
+
+    <breadcrumbs>
+      <item name="FindBugs Maven Plugin" href="index.html"/>
+    </breadcrumbs>
+
+    <menu name="Overview">
+      <item name="Introduction" href="index.html"/>
+      <item name="Goals" href="plugin-info.html"/>
+      <item name="Usage" href="usage.html"/>
+      <item name="FAQ" href="faq.html"/>
+    </menu>
+    <menu name="Examples">
+      <item name="Sample Report" href="examples/findbugs.html"/>
+      <item name="Sample XML xdoc Report" href="examples/findbugs.xml"/>
+      <item name="Sample Legacy XML Report" href="examples/findbugsXml.xml"/>
+      <item name="Multi-Module Configuration" href="examples/multi-module-config.html"/>
+      <item name="Violation Checking Configuration" href="examples/violationChecking.html"/>
+    </menu>
+    <menu ref="reports" />
+  </body>
+</project>
